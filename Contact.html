@@ -1,42 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Mon Portfolio</title>
 </head>
+
 <body>
-    <h1>Contact</h1>
 
-<form action="">
+   
 
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom">
-    <br>
-    <label for="prenom">Prénom :</label>
-    <input type="text" id="prenom" name="prenom">
-    <br>  
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email">
-    <br>
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password">
-    <br>
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" name="telephone">
-    <br>
-    <label for="sujet">Sujet :</label>
+    <main>
 
-    <select id="sujet" name="sujet">
-        <option value="projet">Projet web</option>
-        <option value="autre">Autres</option>
-    </select>   
-    <br>
-        <label for="message">Message</label><br>
-        <textarea name="message" id="message" rows="10" cols="50"></textarea>
-    <br>
-    <button type="submit">Envoyer</button>
+        <h1>Contactez-moi</h1>
 
-</form>
+        <p>
+            Vous avez un projet, une question ou souhaitez simplement
+            échanger avec moi ? N'hésitez pas à me contacter.
+        </p>
+
+        <section>
+            <h2>Mes coordonnées</h2>
+
+            <p>
+                Email :
+                <a href="mailto:tonemail@gmail.com">
+                    HD4543062@example.com
+                </a>
+            </p>
+
+            <p>
+                 Téléphone :
+                <a href="tel:+221785209258">
+                    +221 78 520 92 58
+                </a>
+            </p>
+
+            <p>
+                 Localisation : Dakar, Sénégal
+            </p>
+        </section>
+
+        <section>
+            <h2>Envoyer un message</h2>
+
+            <form action="#" method="post">
+
+                <p>
+                    <label for="nom">Nom :</label><br>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Votre nom"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="email">Email :</label><br>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="votre@email.com"
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="sujet">Sujet :</label><br>
+                    <input
+                        type="text"
+                        id="sujet"
+                        name="sujet"
+                        placeholder="Sujet de votre message"
+                        required
+                    >
+                </p>
+                 
+                <p>
+                    <label for="message">Message :</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        cols="40"
+                        placeholder="Écrivez votre message..."
+                        required
+                    ></textarea>
+                </p>
+
+                <button type="submit">
+                    Envoyer le message
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Mes réseaux</h2>
+
+            <p>
+                <a href="#" target="_blank">GitHub</a>
+                |
+                <a href="#" target="_blank">LinkedIn</a>
+                 |
+                <a href="#" target="_blank">Facebook</a>
+                 |
+                <a href="#" target="_blank">Watsap</a>
+
+
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p> 2026 Mon Portfolio - Tous droits réservés</p>
+    </footer>
+
 </body>
 </html>
